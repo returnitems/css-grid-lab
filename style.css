@@ -3,8 +3,8 @@
 }
 
 body {
-    display: grid;
     background-color: rgb(255, 255, 255);
+    
 }
 
 ul {
@@ -30,6 +30,14 @@ main {
     background-color: white;
     border: 1px solid black;
     border-radius: 4px;
+}
+
+
+/* MAIN CONTAINER */
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    place-items: center;
 }
 
 .logo {
@@ -61,6 +69,7 @@ main {
     background-color: rgb(247, 247, 247);
     width: 1440px;
     height: 700px;
+    border-bottom: 1px solid white;
 }
 
 .resume {
@@ -91,4 +100,71 @@ main {
     border-radius: 5px;
     width: 200px;
     height: 60px;
+}
+
+.socialproof {
+    width: 1440px;
+    height: 268px;
+    background: rgba(247, 247, 247, 1);
+}
+
+.trust {
+    font-size: 24px;
+    line-height: 33.75px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.companies {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: rgba(0, 0, 0, 1);
+}
+
+.circle {
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media (max-width: 360px) {
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    
+
+    .nav {
+        display: grid;
+        justify-content: left;
+        
+    }
+
+    .hero {
+        /* display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start; */
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        justify-content: left;
+    }
+
+    .filler {
+        text-wrap: wrap;
+        font-size: 14px;
+        word-wrap:break-word;
+        margin: auto;
+    }
+
+    .portfolio {
+        margin-top: 10px;
+        width: 100px;
+        
+    }
 }
